@@ -1,0 +1,59 @@
+form {
+  width: 360px;
+  padding: 30px;
+  background: white;
+  border-radius: 7px;
+  box-shadow: 0px 4px 20px 0px #0000001a;
+}
+form > div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+form > div label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+form > div input,
+textarea {
+  outline: 0;
+  border: 0;
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  padding: 8px 12px;
+}
+textarea {
+  height: 100px;
+  color: var(--grey);
+}
+input[type="submit"] {
+  background-color: black;
+  border: 0;
+  border-radius: 17px;
+  color: white;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+input[type="submit"]:hover {
+  background-color: var(--main-color);
+}
+
+/* large screen */
+@media (min-width: 993px) and (max-width: 1180px) {
+  form {
+    width: 300px;
+  }
+}
+/* small screen */
+@media (min-width: 577px) and (max-width: 768px) {
+  form {
+    width: 100%;
+  }
+}
+/* mobile screen */
+@media (min-width: 200px) and (max-width: 576px) {
+  form {
+    width: 100%;
+  }
+}

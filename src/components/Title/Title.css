@@ -1,0 +1,43 @@
+.section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sub-title {
+  text-transform: uppercase;
+  color: var(--title-pink);
+  position: relative;
+  font-size: 14px;
+  margin: 0 0 15px 10px;
+}
+.sub-title::before {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 3px;
+  background-color: var(--title-pink);
+  left: -6px;
+  top: 1px;
+}
+.title {
+  font-size: 32px;
+  width: 282px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .title {
+    width: 261px;
+  }
+}
+@media (min-width: 200px) and (max-width: 576px) {
+  .title {
+    font-size: 26px;
+    font-weight: 700;
+  }
+  .sub-title {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,31 @@
+.pagenation {
+  justify-content: center;
+  margin-top: 30px;
+}
+.pagenation-item {
+  background-color: black;
+  color: white;
+  margin: 0 5px;
+  border-radius: 30px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.pagenation-item:hover, .pagenation-item-active {
+  background-color: var(--main-color);
+}
+
+@media (min-width: 200px) and (max-width: 576px) {
+  .pagenation {
+    margin-top: 15px;
+  }
+  .pagenation-item {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+  }
+}

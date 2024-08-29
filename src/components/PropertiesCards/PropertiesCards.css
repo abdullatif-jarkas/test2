@@ -1,0 +1,181 @@
+.properties-wrapper {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-top: 50px;
+}
+.property-card {
+  width: 32%;
+  padding: 30px;
+  background-color: var(--background-grey);
+  border-radius: 10px;
+}
+.property-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.property-card .property-price {
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+.property-card .property-price p {
+  padding: 5px 10px;
+  background-color: var(--pink);
+  text-transform: capitalize;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.property-card .property-price span {
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 700;
+}
+.property-card .property-location {
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.property-card .property-details {
+  padding: 20px 0;
+  gap: 0.1em 1.2em;
+  flex-wrap: wrap;
+  border-bottom: 2px solid var(--light-grey);
+}
+.property-card .property-details li {
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.property-card .property-details li span {
+  font-weight: 600;
+  margin-left: 5px;
+  color: black;
+  text-transform: lowercase;
+}
+.property-card .property-link {
+  padding: 8px 0;
+  margin: 25px auto 0;
+  display: block;
+  background-color: black;
+  color: white;
+  width: 150px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.property-card .property-link:hover {
+  background-color: var(--main-color);
+}
+
+/* Media Query */
+
+/* large screen */
+@media (min-width: 993px) and (max-width: 1180px) { 
+
+    .property-card {
+      width: 250px;
+      padding: 20px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1180px) {
+  .property-card .property-price {
+    margin: 15px 0;
+  }
+  .property-card .property-price span {
+    font-size: 18px;
+  }
+  .property-card .property-price p {
+    padding: 3px 6px;
+    font-size: 13px;
+  }
+
+  .property-card .property-location {
+    font-size: 16px;
+  }
+  .property-card .property-details {
+    padding: 15px 0;
+    font-size: 14px;
+}
+.property-card .property-link {
+    padding: 6px 0;
+    margin: 15px auto 0;
+    width: 130px;
+    font-size: 12px
+}
+}
+
+/* medium screen */
+@media (min-width: 769px) and (max-width: 992px) {
+
+    .property-card {
+        width: 300px;
+        padding: 20px;
+      }
+}
+/* small screen */
+@media (min-width: 577px) and (max-width: 768px) {
+    .property-card {
+        width: 48%;
+        padding: 17px;
+      }
+      .property-card .property-price {
+        margin: 10px 0;
+      }
+      .property-card .property-price span {
+        font-size: 17px;
+      }
+      .property-card .property-price p {
+        padding: 3px 6px;
+        font-size: 12px;
+      }
+    
+      .property-card .property-location {
+        font-size: 16px;
+      }
+      .property-card .property-details {
+        padding: 10px 0;
+        font-size: 13px;
+    }
+    .property-card .property-link {
+        padding: 6px 0;
+        margin: 15px auto 0;
+        width: 130px;
+        font-size: 12px
+    }  
+}
+/* mobile screen */
+@media (min-width: 200px) and (max-width: 576px) {
+    .properties-wrapper {
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .property-card {
+        width: 280px;
+        padding: 17px;
+      }
+      .property-card .property-price {
+        margin: 10px 0;
+      }
+      .property-card .property-price span {
+        font-size: 14px;
+      }
+      .property-card .property-price p {
+        padding: 3px 6px;
+        font-size: 11px;
+      }
+    
+      .property-card .property-location {
+        font-size: 14px;
+      }
+      .property-card .property-details {
+        padding: 10px 0;
+        font-size: 10px;
+    }
+    .property-card .property-link {
+        padding: 6px 0;
+        margin: 15px auto 0;
+        width: 120px;
+        font-size: 11px;
+    }  
+}

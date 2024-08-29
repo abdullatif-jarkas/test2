@@ -1,0 +1,12 @@
+.btns-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+@media (min-width: 200px) and (max-width: 576px) {
+    .btns-wrapper .deal-filter-btn {
+        margin: 0;
+    }
+}

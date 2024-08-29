@@ -1,0 +1,149 @@
+.nav-two {
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  background-color: white;
+  /* box-shadow: 4px -5px 16px 0px #c8c7c7; */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+h1.logo {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#nav-items {
+  display: flex;
+  align-items: center;
+}
+#nav-items li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#nav-items li a {
+  color: black;
+  text-transform: capitalize;
+  font-size: 17px;
+  transition: all 0.5s;
+}
+.schedule {
+  background-color: black;
+  border-radius: 19px;
+  cursor: pointer;
+}
+.schedule a {
+  color: white !important;
+  font-size: 14px !important;
+  padding: 0 17px 0 10px;
+}
+.schedule .schedule-icon {
+  color: white;
+  background-color: var(--main-color);
+  padding: 11px 12px;
+  border-radius: 40px;
+  font-size: 14px;
+  animation: shake 0.35s infinite;
+}
+#nav-items li:not(.schedule) {
+  margin-right: 4em;
+}
+#nav-items li:hover a,
+.active {
+  color: var(--main-color) !important;
+  cursor: pointer;
+}
+.nav-icon,
+.for-responsive {
+  color: black;
+  display: none;
+}
+#nav-items.nav-active {
+  right: 0;
+}
+.x-icon {
+  position: absolute;
+  right: 4%;
+  top: 1%;
+}
+@media screen and (max-width: 1200px) {
+  #nav-items {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 200px;
+    min-height: 50vh;
+    background-color: var(--background-grey);
+    border-radius: 3px;
+    transition: 0.5s ease-in;
+    height: 100vh;
+    padding: 50px 0 0 20px;
+  }
+  .nav-icon,
+  .for-responsive {
+    display: block;
+  }
+  #nav-items li {
+    margin: 0 0 20px 0 !important;
+  }
+  .nav-icon {
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .x-icon {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .nav-two {
+    align-items: center;
+    padding: 17px 0;
+  }
+   h1.logo {
+    font-size: 20px !important;
+  }
+  #nav-items {
+    min-height: max-content;
+  }
+  #nav-items li a {
+    font-size: 14px;
+  }
+  .nav-icon {
+    font-size: 20px;
+  }
+  .x-icon {
+    font-size: 16px;
+  }
+  .schedule a {
+    font-size: 12px !important;
+    padding: 0 12px 0 7px;
+  }
+  .schedule .schedule-icon {
+    font-size: 12px;
+    padding: 9px 11px;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-5deg);
+  }
+}

@@ -1,0 +1,14 @@
+.mini-footer {
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #181717;
+}
+
+/* mobile screen */
+@media (min-width: 200px) and (max-width: 576px) {
+  .mini-footer {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+}
